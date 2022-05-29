@@ -84,6 +84,6 @@ public class ArtigoController {
 
   @GetMapping("/publicados") // LISTAR TODOS OS PUBLICADOS
   public List<Artigo> GetPublished() {
-    return _artigoRepository.findPublished();
+    return _artigoRepository.findPublished(true);
   }
 }
